@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Abril Fatface', cursive;
+  background: #1abc9c;
+  background: linear-gradient(135deg, #ffffff 0%, #DBE7F6 100%);
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+  font-size: 34px;
+  margin: 10px 0 0 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+/*  color: #0091d0;*/
+    color: black;
+}
+
+p {
+  font-size: 16px;
+  font-weight: light;
+  color: #58595b;
+}
+
+span a {
+  font-size: 28px;
+  color: #0091d0;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.4s ease-in-out;
+}
+span a:hover {
+  color: #99d3ec;
+}
+
+@-webkit-keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 508px;
+/*  height: auto;*/
+  box-sizing: border-box;
+  overflow: hidden; 
+  transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+}
+.avatar img {
+  width: 100%;
+/*  height: auto;*/
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.suppoprt-me {
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 20vw;
+  max-width: 250px;
+  min-width: 200px;
+  z-index: 9;
+}
+.suppoprt-me img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width:580px){
+    .avatar {
+      width: 442px;
+    }
+}
+
+@media screen and (max-width:478px){
+    .avatar {
+      max-width: 400px;
+    }
+}
+@media screen and (max-width:416px){
+    .avatar {
+      max-width: 300px;
+    }
+}
